@@ -296,3 +296,34 @@ cin>>DOB11[temp].year;
 }
 while(DOB11[temp].year<0||DOB11[temp].year>10000);
 }
+clreol();
+cout<<"\nMonth: ";
+clreol();
+cin>>DOB11[temp].month;
+if(DOB11[temp].month<=0||DOB11[temp].month>12)
+{
+do
+{
+clreol();
+cout<<"\nInvalid input for month !"<<"";
+cout<<"\nAgain enter the month: "<<"";
+clreol();
+if(count!=0)
+{
+clreol();
+}
+cin>>DOB11[temp].month;
+}
+while(DOB11[temp].month<0||DOB11[temp].month>12);
+}
+cout<<"\nDate: ";
+clreol();
+switch(DOB11[temp].month)
+{
+case 1:
+case 3:
+case 5:
+case 7:
+case 8:
+case 10:
+case 12:
