@@ -203,4 +203,67 @@ if(count!=0)
 {
 clreol();
 }
+cin>>PI[i].martial_status;
+while(PI[i].martial_status<1||PI[i].martial_status>2)
+{
+cout<<"\nInvalid input for martial status ."<<"";
+cout<<"\nEnter a valid martial status: "<<"";
+clreol();
+cin>>PI[i].martial_status;
+}
+cin.get(ch);
+if(count!=0)
+{
+clreol();
+}
+clreol();
+cout<<"\nBlood group: "<<"";
+clreol();
+cout<<"1. A+ "<<"";
+clreol();
+cout<<"2. A- "<<"";
+clreol();
+cout<<"3. B+ "<<"";
+clreol();
+cout<<"4. B- "<<"";
+clreol();
+cout<<"5. AB+ "<<"";
+clreol();
+cout<<"6. AB- "<<"";
+clreol();
+cout<<"7. O+ "<<"";
+clreol();
+cout<<"8. O- "<<"";
+clreol();
+cout<<"Enter :"<<"";
+clreol();
+cin>>PI[i].bld_group;
+switch(PI[i].bld_group)
+{
+case 1:
+case 2:
+case 3:
+case 4:
+case 5:
+case 6:
+case 7:
+case 8:
+{
+break;
+}
+default:
+{
+while(PI[i].bld_group!=1&&PI[i].bld_group!=2&&PI[i].bld_group!=3&&
+PI[i].bld_group!=4&&PI[i].bld_group!=5&&PI[i].bld_group!=6&&
+PI[i].bld_group!=7&&PI[i].bld_group!=8)
+{
+clreol();
+cout<<"\nInvalid input !"<<"";
+cout<<"\nBlood Group: "<<"";
+clreol();
+cin>>PI[i].bld_group;
+}
+break;
+}
+}
 
