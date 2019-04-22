@@ -266,4 +266,33 @@ cin>>PI[i].bld_group;
 break;
 }
 }
-
+cin.get(ch);
+cout<<"\nWant to enter information for another patient ? "<<"";
+clreol();
+cin>>answer;
+count++;
+serial++;
+}
+clrscr();
+A1.tasks();
+}
+void dob::enter_date()
+{
+clreol();
+cout<<"\nDate of birth -"<<"";
+clreol();
+cout<<"\nYear :";
+clreol();
+clreol();
+cin>>DOB11[temp].year;
+if(DOB11[temp].year<=0||DOB11[temp].year>10000)
+{
+do
+{
+clreol();
+cout<<"\nInvalid input for year !"<<"";
+cout<<"\nPlease enter the year correctly :"<<"";
+cin>>DOB11[temp].year;
+}
+while(DOB11[temp].year<0||DOB11[temp].year>10000);
+}
