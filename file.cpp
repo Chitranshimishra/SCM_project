@@ -142,4 +142,106 @@ goto over;
 }
 switch(rem)
 {
+case 1:
+{
+cout<<"st ";
+break;
+}
+case 2:
+{
+cout<<"nd ";
+break;
+}
+case 3:
+{
+cout<<"rd ";
+break;
+}
+default:
+{
+cout<<"th ";
+break;
+}
+}
+over:
+switch(DOB11[regis].month)
+{
+case 1:
+{
+cout<<"January , ";
+break;
+}
+case 2:
+{
+cout<<"February , ";
+break;
+}
+case 3:
+{
+cout<<"March , ";
+break;
+}
+case 4:
+{
+cout<<"April , ";
+break;
+}
+case 5:
+{
+cout<<"May , ";
+break;
+}
+case 6:
+{
+cout<<"June , ";
+break;
+}
+case 7:
+{
+cout<<"July , ";
+break;
+}
+case 8:
+{
+cout<<"August , ";
+break;
+}
+case 9:
+{
+cout<<"September , ";
+break;
+}
+case 10:
+{
+cout<<"October , ";
+break;
+}
+case 11:
+{
+cout<<"November , ";
+break;
+
+}
+case 12:
+{
+cout<<"December , ";
+break;
+}
+}
+cout<<DOB11[regis].year<<" ";
+}
+void all::software_detail()
+{
+clrscr();
+cout<<"\n***SOFTWARE DETAILS***";
+cout<<"\nProgramming Language : C++ "<<"";
+cout<<"\nAim : Simulation of the software used in Hospital"<<"";
+cout<<"\nHope you like it..."<<"";
+cout<<"\nSend your comments to : 500067782@stu.upes.ac.in"<<"";
+cout<<"\nThank You for trying this program. "<<"";
+cout<<"\nPress any key to return to the main task menu......."<<" ";
+getch();
+A1.tasks();
+}
+
 
